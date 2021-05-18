@@ -1,0 +1,26 @@
+{
+  "name": "clase0yamilerivero",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style-prueba.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YamileRivero/webpanaderialihuel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YamileRivero/webpanaderialihuel/issues"
+  },
+  "homepage": "https://github.com/YamileRivero/webpanaderialihuel#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {},
+  "description": ""
+}
