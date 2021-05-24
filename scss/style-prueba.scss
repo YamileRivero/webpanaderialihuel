@@ -46,7 +46,7 @@ li a.nav-link{
     margin: 0;
     padding: 0;
     background-color: white;
-     
+        
   
 }
 
@@ -57,7 +57,7 @@ li a.nav-link{
     color:#C7C736;
     margin: 0% 0 0 0;
     size: 15px;
-    padding: 0%;
+    padding-left: 30%;
     
 }
 
@@ -92,7 +92,7 @@ li a.nav-link{
 .foto-historia {
   display: none;
   margin: 0;
-  padding: 0;
+  padding-top: 0;
   } 
 
 @media (min-width:769px) {
@@ -112,6 +112,7 @@ li a.nav-link{
     color: #7A7A21;
     font-family: 'Oranienbaum', serif; 
     padding: 0 0 5% 0;
+    font-size: 17px;
     
 }
 
@@ -137,42 +138,69 @@ li a.nav-link{
 .section3 {
     background-color: white;
     display: grid;
-    grid-template-columns: repeat (12, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat (3, 1fr);
     gap: 10px;
-    justify-items:center;
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
+    justify-items: center;
+    margin: 0;
+    padding-right: 0px;
+    height: 100%; 
 }
 
 .titulo3 {
     font-size: 400%;
     font-style: italic;
     color: #7A7A46;
-    font-family: 'Oranienbaum', serif; 
-    margin: 5% 0% 10% 0;
-
+    font-family: 'Oranienbaum', serif;
+    margin: 5% 0% 10% 0; 
+    text-align: center;
 }
 
 
 .contenedor {
+    display: flex;
     position: relative;
     height: 250px;
     width: 250px;
-}
-
+ }
+  
 .contenedor .img-fluid .back {
     position: absolute;
     left: 0;
-    transition: opacity .5s ease-in-out;
-    
+}
+  
+  
+.back {
+      transition: opacity .5s ease-in-out; 
+    }
+
+.back:hover {
+    opacity: .5; 
 }
 
-.contenedor .img-fluid .top:hover {
-    opacity: 0;
+.contenedor .img-fluid .top {
+    position: absolute;
+    left: 0;
     
 }
+  
+  
+.top {
+      transition: opacity .5s ease-in-out; 
+      display: none;
+    }
+
+.top:hover {
+    opacity: .5; 
+}
+
+@media (min-width:991px) {
+    .top {
+       display: block;
+    }  
+
+
+
 
 
 .section4 {
@@ -244,19 +272,28 @@ $sorteo: (
 
 
 .mi-contacto {
-    background-color: #7A7A21;
-    color: white;
+    background-image: url(https://cdn.hipwallpaper.com/i/3/11/U2Kvyj.jpg);
+    color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 10%;
     margin: 0%;
     margin-right: 0;
+     
+}
 
-   
+.mi-info {
+    font-size: 18px;
+    text-justify: center;
+    background-color:white;
+    opacity: 0.8 ;
+
 }
 
 .redes {
+    padding-top:  45px;
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-justify: center;
 }
 
 .mi-mapa{
@@ -267,7 +304,7 @@ $sorteo: (
     .mi-mapa {
        margin-top: 0%;
     }  
-    
+
 
 footer {
    
@@ -282,11 +319,25 @@ footer {
 
 
 .jumbotron {
-    background-color:#FBFB8F;
+    background-image: url(https://cdn.hipwallpaper.com/i/3/11/U2Kvyj.jpg); 
     color: black;
-    size: 2px;
+    size: 5px;
     padding: 1%;
+    font-weight: bold;
   }
+
+  @media (min-width:991px) {
+      .jumbotron { background-image: url(https://cdn.hipwallpaper.com/i/3/11/U2Kvyj.jpg); 
+
+      }
+      
+  }
+
+.display-4 {
+    font-size: 20px;
+    font-weight: bold;
+    
+}
 
 
 .btn {
@@ -314,6 +365,7 @@ footer {
 header {
     background-color: #7A7A21;
     padding: 0;
+    
 }
 
 li a.nav-link{
@@ -327,5 +379,9 @@ li a.nav-link{
 
 .marca {
     margin: 5%;
+}
+
+
+
 }
 }

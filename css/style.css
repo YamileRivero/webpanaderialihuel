@@ -39,7 +39,7 @@ li a.nav-link {
   color: #C7C736;
   margin: 0% 0 0 0;
   size: 15px;
-  padding: 0%; }
+  padding-left: 30%; }
 
 @media (min-width: 768px) {
   .titulo1 {
@@ -63,7 +63,7 @@ li a.nav-link {
 .foto-historia {
   display: none;
   margin: 0;
-  padding: 0; }
+  padding-top: 0; }
 
 @media (min-width: 769px) {
   .foto-historia {
@@ -78,7 +78,8 @@ li a.nav-link {
   align-items: center;
   color: #7A7A21;
   font-family: 'Oranienbaum', serif;
-  padding: 0 0 5% 0; }
+  padding: 0 0 5% 0;
+  font-size: 17px; }
 
 .wowanimacion {
   padding: 5% 0 5% 0;
@@ -99,12 +100,12 @@ li a.nav-link {
 .section3 {
   background-color: white;
   display: grid;
-  grid-template-columns: repeat 12, 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat 3, 1fr;
   gap: 10px;
   justify-items: center;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding-right: 0px;
   height: 100%; }
 
 .titulo3 {
@@ -112,92 +113,108 @@ li a.nav-link {
   font-style: italic;
   color: #7A7A46;
   font-family: 'Oranienbaum', serif;
-  margin: 5% 0% 10% 0; }
+  margin: 5% 0% 10% 0;
+  text-align: center; }
 
 .contenedor {
+  display: flex;
   position: relative;
   height: 250px;
   width: 250px; }
 
 .contenedor .img-fluid .back {
   position: absolute;
-  left: 0;
+  left: 0; }
+
+.back {
   transition: opacity .5s ease-in-out; }
 
-.contenedor .img-fluid .top:hover {
-  opacity: 0; }
+.back:hover {
+  opacity: .5; }
 
-.section4 {
-  background-color: white;
-  color: #C7C736;
-  padding: 100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
+.contenedor .img-fluid .top {
+  position: absolute;
+  left: 0; }
 
-.titulo4 {
-  font-size: 150%;
-  display: flex;
-  text-align: center;
-  color: white;
-  background-color: #C7C736;
-  padding: 20px 20px 20px 30px;
-  margin: 20px 20px 20px 20px;
-  animation-duration: 1s;
-  animation-name: animate__bounceIn;
-  animation-iteration-count: infinite;
-  height: -270px;
-  width: 300px; }
+.top {
+  transition: opacity .5s ease-in-out;
+  display: none; }
 
-@keyframes animate__bounceIn {
-  from {
-    color: #C7C736; }
-  to {
-    color: black; } }
-
-.ganadores {
-  display: grid;
-  grid-template-columns: repeat 2, 1fr;
-  grid-template-rows: repeat 1, 1fr;
-  gap: 10px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: 115%;
-  list-style: none;
-  margin: 20px 0px 20px 0px; }
-
-.btn--ganador {
-  background-color: #7A7A46;
-  color: white;
-  padding: 5px; }
-
-.btn--premio {
-  background-color: #7A7A46;
-  color: white;
-  padding: 5px; }
-
-.btn--en {
-  background-color: #7A7A46;
-  color: white;
-  padding: 5px; }
-
-.mi-contacto {
-  background-color: #7A7A21;
-  color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 10%;
-  margin: 0%;
-  margin-right: 0; }
-
-.redes {
-  color: black;
-  font-family: Georgia, 'Times New Roman', Times, serif; }
-
-.mi-mapa {
-  margin-top: 5%; }
+.top:hover {
+  opacity: .5; }
 
 @media (min-width: 991px) {
+  .top {
+    display: block; }
+  .section4 {
+    background-color: white;
+    color: #C7C736;
+    padding: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .titulo4 {
+    font-size: 150%;
+    display: flex;
+    text-align: center;
+    color: white;
+    background-color: #C7C736;
+    padding: 20px 20px 20px 30px;
+    margin: 20px 20px 20px 20px;
+    animation-duration: 1s;
+    animation-name: animate__bounceIn;
+    animation-iteration-count: infinite;
+    height: -270px;
+    width: 300px; }
+  @keyframes animate__bounceIn {
+    from {
+      color: #C7C736; }
+    to {
+      color: black; } }
+  .ganadores {
+    display: grid;
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-rows: repeat 1, 1fr;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 115%;
+    list-style: none;
+    margin: 20px 0px 20px 0px; }
+  .btn--ganador {
+    background-color: #7A7A46;
+    color: white;
+    padding: 5px; }
+  .btn--premio {
+    background-color: #7A7A46;
+    color: white;
+    padding: 5px; }
+  .btn--en {
+    background-color: #7A7A46;
+    color: white;
+    padding: 5px; }
+  .mi-contacto {
+    background-image: url(https://cdn.hipwallpaper.com/i/3/11/U2Kvyj.jpg);
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10%;
+    margin: 0%;
+    margin-right: 0; }
+  .mi-info {
+    font-size: 18px;
+    text-justify: center;
+    background-color: white;
+    opacity: 0.8; }
+  .redes {
+    padding-top: 45px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-justify: center; }
+  .mi-mapa {
+    margin-top: 5%; } }
+
+@media (min-width: 991px) and (min-width: 991px) {
   .mi-mapa {
     margin-top: 0%; }
   footer {
@@ -208,10 +225,20 @@ li a.nav-link {
     padding: 5%;
     margin: 0%; }
   .jumbotron {
-    background-color: #FBFB8F;
+    background-image: url(https://cdn.hipwallpaper.com/i/3/11/U2Kvyj.jpg);
     color: black;
-    size: 2px;
-    padding: 1%; }
+    size: 5px;
+    padding: 1%;
+    font-weight: bold; } }
+
+@media (min-width: 991px) and (min-width: 991px) and (min-width: 991px) {
+  .jumbotron {
+    background-image: url(https://cdn.hipwallpaper.com/i/3/11/U2Kvyj.jpg); } }
+
+@media (min-width: 991px) and (min-width: 991px) {
+  .display-4 {
+    font-size: 20px;
+    font-weight: bold; }
   .btn {
     background-color: #7A7A21;
     color: white; }
